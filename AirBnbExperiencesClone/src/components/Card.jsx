@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types'
 
 function Card (props) {
-    console.log(props.items)
     let badgeText
     if (props.items.openSpots === 0) {
         badgeText = "SOLD OUT"
@@ -24,5 +24,22 @@ function Card (props) {
         </div>
     )
 }
+
+Card.propTypes = {
+    id: PropTypes.number,
+    items: PropTypes.shape({
+        id: PropTypes.number,
+        title: PropTypes.string,
+        description: PropTypes.string,
+        price: PropTypes.number,
+        coverImg: PropTypes.string,
+        stats: PropTypes.shape({
+            rating: PropTypes.number,
+            reviewCount: PropTypes.number
+        }),
+        location: PropTypes.string,
+        openSpots: PropTypes.number
+    })
+};
 
 export default Card

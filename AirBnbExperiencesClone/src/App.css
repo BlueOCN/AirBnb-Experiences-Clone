@@ -55,3 +55,75 @@ body {
     text-align: left;
     color: #222222;
 }
+
+.deck-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    margin-inline-start: 36px;
+    margin-inline-end: 36px;
+}
+
+
+.card--img {
+    max-width: 176px;
+    border-radius: 9px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2px;
+}
+
+.stats--img {
+    width: 14px;
+    height: 14px;
+}
+
+.stats--rating {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 110%;
+    text-align: left;
+    color: #222222;
+}
+
+.stats--reviewCount {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 110%;
+    text-align: left;
+    color: #918E9B;
+}
+
+.stats--location {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 110%;
+    text-align: left;
+    color: #918E9B;
+}
+
+.normal {
+
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 110%;
+    text-align: left;
+    color: #222222;
+}
+
+.bold {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 110%;
+    text-align: left;
+    color: #000000;
+}

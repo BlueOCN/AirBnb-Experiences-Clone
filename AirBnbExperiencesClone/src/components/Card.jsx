@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import star_icon from '../assets/Star.png'
 
 function Card (props) {
     let badgeText
@@ -12,9 +13,9 @@ function Card (props) {
     return (
         <div className="card">
             {badgeText && <div className="card--badge">{badgeText}</div>}
-            <img className="card--img" src={"../src/assets/"+props.items.coverImg} alt="cover_img"/>
+            <img className="card--img" src={props.items.coverImg} alt="cover_img"/>
             <div className="card--stats">
-                <img className="stats--img" src="../src/assets/Star.png" alt="star_img" />
+                <img className="stats--img" src={star_icon} alt="star_img" />
                 <p className="stats--rating">{props.items.stats.rating}</p>
                 <p className="stats--reviewCount">({props.items.stats.reviewCount}) ⋅ </p>
                 <p className="stats--location"> {props.items.location}</p>
